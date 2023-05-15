@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+
 type Props = {
   params: {
     slug: string;
@@ -5,6 +7,10 @@ type Props = {
 };
 
 export default function Pants({ params }: Props) {
+  if (params.slug === "nothing") {
+    notFound();
+  }
+
   return <h1>{params.slug} 정보 페이지입니다!</h1>;
 }
 
