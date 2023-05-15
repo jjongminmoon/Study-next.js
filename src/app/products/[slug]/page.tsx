@@ -6,7 +6,7 @@ type Props = {
   };
 };
 
-export default function Pants({ params }: Props) {
+export default function ProductInfoPage({ params }: Props) {
   if (params.slug === "nothing") {
     notFound();
   }
