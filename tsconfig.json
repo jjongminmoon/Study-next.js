@@ -28,7 +28,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/pages/api/products"
+    "src/pages/api/product"
   ],
   "exclude": ["node_modules"]
 }
